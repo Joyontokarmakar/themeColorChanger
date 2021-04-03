@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --theme_change_color: #8EC63F;
+}
+
+
+.color_changer_btn{
+    margin-top: 10%;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    background-color: var(--theme_change_color);
+}
+
+.color_changer_btn:hover{
+    color: #000;
+    transition: 0.4s;
+}
+
+.color_changer_btn:hover .colors_available{
+    display: block;
+}
+
+.colors_available{
+    background: var(--theme_change_color);
+    width: 90px;
+    position: fixed;
+    margin-top: 0%;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+.theme_color{
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: 17px auto;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#first{
+    background: #8EC63F;
+}
+#second{
+    background: #e74c3c;
+}
+#third{
+    background: #5b53b6;
+}
+#forth{
+    background: #f1c40f;
+}
+#five{
+    background: #e67e22;
+}
+#six{
+    background: #2ecc71;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
